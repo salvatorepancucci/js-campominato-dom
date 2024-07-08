@@ -4,3 +4,8 @@ const gridContainer = document.getElementById('gridContainer');
 
 let bombe = [];
 let punteggio = 0;
+
+// Funzione per generare i numeri delle bombe
+function generaBombe(numBombe, rangeMax) {
+    
+}
