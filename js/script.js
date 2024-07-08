@@ -14,3 +14,8 @@ function generaBombe(numBombe, rangeMax) {
     }
     return Array.from(bombe);
 }
+
+// Funzione per generare la griglia
+function generateGrid() {
+    
+}
