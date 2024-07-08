@@ -7,5 +7,5 @@ let punteggio = 0;
 
 // Funzione per generare i numeri delle bombe
 function generaBombe(numBombe, rangeMax) {
-    
+    const bombe = new Set();
 }
