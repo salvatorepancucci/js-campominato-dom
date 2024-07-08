@@ -35,3 +35,7 @@ body {
 .cell.blue {
     background-color: lightblue;
 }
+
+.cell.red {
+    background-color: red;
+}
