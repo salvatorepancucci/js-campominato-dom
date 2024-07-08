@@ -33,6 +33,18 @@ function generateGrid() {
 
         // Aggiunge un listener per il click sulla cella
         cell.addEventListener('click', () => {
-            
+            if (bombe.includes(i)) {
+                cell.classList.add('red'); // Colora la cella di rosso
+                alert(`Hai calpestato una bomba! Punteggio: ${punteggio}`);
+                disableGrid();
+            } else {
+                if (!cell.classList.contains('blue')) {
+                    cell.classList.add('blue'); // Colora la cella di azzurro
+                    punteggio++;
+                    if (punteggio === 84) {
+                        alert(`Complimenti! Hai vinto! Punteggio: ${punteggio}`);
+                        disableGrid();
+                    }
+                }
             }
 }
