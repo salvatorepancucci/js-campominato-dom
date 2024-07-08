@@ -47,4 +47,7 @@ function generateGrid() {
                     }
                 }
             }
+            console.log(`Cella cliccata: ${i}`); // Stampa il numero della cella in console
+        });
+        
 }
