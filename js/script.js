@@ -49,8 +49,16 @@ function generateGrid() {
             }
             console.log(`Cella cliccata: ${i}`); // Stampa il numero della cella in console
         });
-        
+
        // Aggiunge la cella al contenitore della griglia
        gridContainer.appendChild(cell);
     } 
+}
+
+// Disabilita la griglia dopo la fine della partita
+function disableGrid() {
+    const cells = document.querySelectorAll('.cell');
+    cells.forEach(cell => {
+        cell.style.pointerEvents = 'none';
+    });
 }
