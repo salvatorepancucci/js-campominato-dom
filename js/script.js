@@ -30,4 +30,9 @@ function generateGrid() {
         const cell = document.createElement('div');
         cell.classList.add('cell');
         cell.textContent = i;
+
+        // Aggiunge un listener per il click sulla cella
+        cell.addEventListener('click', () => {
+            
+            }
 }
