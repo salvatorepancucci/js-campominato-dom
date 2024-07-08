@@ -17,5 +17,8 @@ function generaBombe(numBombe, rangeMax) {
 
 // Funzione per generare la griglia
 function generateGrid() {
-    
+    // Pulisce il contenitore della griglia
+    gridContainer.innerHTML = '';
+    bombe = generaBombe(16, 100);
+    punteggio = 0;
 }
