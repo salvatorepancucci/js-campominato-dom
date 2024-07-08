@@ -62,3 +62,6 @@ function disableGrid() {
         cell.style.pointerEvents = 'none';
     });
 }
+
+// Aggiunge un listener per il click sul bottone che genera la griglia
+generateGridButton.addEventListener('click', generateGrid);
